@@ -7,7 +7,27 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'calcul',
     pathMatch: 'full',
+  },
+  {
+    path: 'calcul',
+    loadComponent: () => import('./calcul/calcul.page').then( m => m.CalculPage)
+  },
+  {
+    path: 'weather',
+    loadComponent: () => import('./weather/weather.page').then( m => m.WeatherPage)
+  },
+  {
+    path: 'todos',
+    loadComponent: () => import('./todos/todos.page').then( m => m.TodosPage)
+  },
+  {
+    path: 'users',
+    loadComponent: () => import('./users/users.page').then( m => m.UsersPage)
+  },
+  {
+    path: 'camera',
+    loadComponent: () => import('./camera/camera.page').then( m => m.CameraPage)
   },
 ];

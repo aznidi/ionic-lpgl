@@ -1,0 +1,27 @@
+<app-nav-header title="Users"></app-nav-header>
+
+<ion-content [fullscreen]="true">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>EMAIL</th>
+          <th>PHONE</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @for (user of users; track user.id) {
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</ion-content>

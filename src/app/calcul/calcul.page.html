@@ -1,0 +1,21 @@
+<app-nav-header title="Calcul"></app-nav-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Calculatrice</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input label="NB 1" type="number" [(ngModel)]="nb_one" />
+      <ion-input label="NB 2" type="number" [(ngModel)]="nb_two" />
+
+      <ion-button (click)="add()">+</ion-button>
+      <ion-button (click)="sub()">-</ion-button>
+      <ion-button (click)="mul()">*</ion-button>
+      <ion-button (click)="div()">/</ion-button>
+
+      <ion-label>{{result}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,48 @@
+ion-content {
+  --background: #0f172a;
+  --color: #e2e8f0;
+}
+
+.table-wrap {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 12px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 720px; /* force un peu le scroll sur mobile */
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  font-size: 14px;
+}
+
+th {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #e2e8f0;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}

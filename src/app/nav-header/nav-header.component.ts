@@ -31,8 +31,7 @@ export class NavHeaderComponent {
   // Nav links (routes)
   items: NavItem[] = [
     { label: 'Calcul', path: '/calcul' },
-    { label: 'Weather', path: '/weather' },
-    { label: 'Todos', path: '/todos' },
     { label: 'Users', path: '/users' },
+    { label: 'Camera', path: '/camera' },
   ];
 }

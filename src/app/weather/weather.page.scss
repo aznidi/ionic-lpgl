@@ -1,0 +1,59 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#label {
+    color: darkblue;
+    font-size: 30px;
+    font-style: italic;
+}
+#item {
+  text-align: center;
+  margin: 10px;
+}
+#card {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin: 50px;
+}
+#label1 {
+  margin: 15px;
+  color: brown;
+  font-size: 25px;
+}
+#btn {
+  width: 60px;
+  height: 25px;
+  font-size: 25px;
+  margin-top: 15px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  text-align: center;
+}
+#list {
+  display: inline;
+  place-items: center;
+
+}
+#item1{
+  display: flex;
+  place-items: center;
+
+}
+
+#div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

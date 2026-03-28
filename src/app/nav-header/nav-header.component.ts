@@ -33,5 +33,6 @@ export class NavHeaderComponent {
     { label: 'Calcul', path: '/calcul' },
     { label: 'Users', path: '/users' },
     { label: 'Camera', path: '/camera' },
+    { label: 'Weather', path: '/weather' },
   ];
 }

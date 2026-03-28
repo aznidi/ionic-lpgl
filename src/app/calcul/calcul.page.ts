@@ -30,7 +30,7 @@ import { NavHeaderComponent } from '../nav-header/nav-header.component';
     IonCardHeader,
     IonCardTitle,
     IonButton,
-    NavHeaderComponent
+    NavHeaderComponent,
   ],
 })
 export class CalculPage implements OnInit {
@@ -40,11 +40,6 @@ export class CalculPage implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-
-  goToHome(): void {
-    this.router.navigate(['home']);
-  }
-
   add(): void {
     this.result = this.nb_one + this.nb_two;
   }

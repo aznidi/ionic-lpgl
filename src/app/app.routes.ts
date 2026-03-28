@@ -19,10 +19,6 @@ export const routes: Routes = [
     loadComponent: () => import('./weather/weather.page').then( m => m.WeatherPage)
   },
   {
-    path: 'todos',
-    loadComponent: () => import('./todos/todos.page').then( m => m.TodosPage)
-  },
-  {
     path: 'users',
     loadComponent: () => import('./users/users.page').then( m => m.UsersPage)
   },

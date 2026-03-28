@@ -1,5 +1,25 @@
 <app-nav-header title="Weather"></app-nav-header>
 
-<ion-content [fullscreen]="true"> 
-  Hy from Weather
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-card id="card">
+      <ion-card-header>
+        <ion-card-title id="label">Weather Data!!!</ion-card-title>
+        <ion-card-subtitle id="label1">{{country}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list id="list">
+          <ion-item id="item">
+            <ion-label id="label1">{{temp}}</ion-label>
+          </ion-item>
+          <ion-item id="item">
+            <ion-label id="label1">{{pres}}</ion-label>
+          </ion-item>
+          <ion-item id="item">
+            <ion-label id="label1">{{hum}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

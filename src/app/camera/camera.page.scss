@@ -16,8 +16,9 @@ div {
   margin-top: 16px;
   padding: 12px;
   border-radius: 16px;
-  background: var(--ion-color-light);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow);
 }
 
 img {

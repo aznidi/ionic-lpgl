@@ -1,30 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Blank </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-nav-header title="Home"></app-nav-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section class="hero">
+    <div class="hero__text">
+      <span class="eyebrow">Ionic Studio</span>
+      <h1 class="hero__title display-font">A clean new skin for your daily tools.</h1>
+      <p class="hero__subtitle">
+        Same logic, new structure. Bright surfaces, airy spacing, and a layout that
+        makes every page feel intentional.
+      </p>
+      <div class="hero__actions">
+        <app-button
+          label="Open Calcul"
+          variant="primary"
+          size="lg"
+          (pressed)="goToCalcul()"
+        ></app-button>
+        <app-button
+          label="See Users"
+          variant="outline"
+          size="lg"
+          (pressed)="goToUsers()"
+        ></app-button>
+      </div>
+    </div>
 
-  <div id="container">
-    <app-button
-      label="Go to Calcul"
-      variant="primary"
-      (click)="goToCalcul()"
-    ></app-button>
+    <div class="hero__canvas">
+      <div class="orbit orbit--a"></div>
+      <div class="orbit orbit--b"></div>
+      <div class="orbit orbit--c"></div>
+      <div class="hero__badge">360° view</div>
+    </div>
+  </section>
 
-    <br />
-    <hr />
-
-    <app-button
-      label="Go to Users"
-      variant="primary"
-      (click)="goToUsers()"
-    ></app-button>
-  </div>
+  <section class="quick-links">
+    <div class="quick-links__item surface">
+      <h3 class="display-font">Calculator</h3>
+      <p>Fast operations with a calm, focused panel.</p>
+    </div>
+    <div class="quick-links__item surface">
+      <h3 class="display-font">Users</h3>
+      <p>Readable data, soft grid, and light hover detail.</p>
+    </div>
+    <div class="quick-links__item surface">
+      <h3 class="display-font">Camera</h3>
+      <p>Capture with a minimal action bar and a framed preview.</p>
+    </div>
+    <div class="quick-links__item surface">
+      <h3 class="display-font">Weather</h3>
+      <p>Live metrics presented like an editorial spread.</p>
+    </div>
+  </section>
 </ion-content>

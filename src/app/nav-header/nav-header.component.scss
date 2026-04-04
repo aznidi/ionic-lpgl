@@ -1,13 +1,90 @@
-ion-toolbar {
-  --background: #0f172a;
-  --color: #e2e8f0;
+:host {
+  display: block;
 }
 
-ion-title {
+.nav-header ion-toolbar {
+  --background: rgba(255, 255, 255, 0.9);
+  --color: var(--app-text);
+  border-bottom: 1px solid var(--app-border);
+  backdrop-filter: blur(14px);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--app-primary);
+  box-shadow: 0 0 0 6px rgba(240, 100, 73, 0.14);
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand__name {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--app-muted);
+}
+
+.brand__page {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--app-text);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  --padding-start: 14px;
+  --padding-end: 14px;
+  --border-radius: 999px;
+  --color: var(--app-text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.nav-link:hover {
+  --color: var(--app-primary);
+}
+
+.nav-link.active {
+  --background: var(--app-primary);
+  --color: #ffffff;
   font-weight: 700;
 }
 
-ion-button.active {
-  font-weight: 800;
-  text-decoration: underline;
+@media (max-width: 720px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }

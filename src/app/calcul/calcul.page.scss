@@ -1,5 +1,5 @@
 ion-content {
-  --background: #0f172a;
+  --background: var(--app-bg);
 }
 
 /* card centrée */
@@ -18,7 +18,7 @@ ion-card-content {
 
 /* inputs un peu plus jolis */
 ion-input {
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid var(--app-border);
   border-radius: 10px;
   --padding-start: 12px;
   --padding-end: 12px;
@@ -52,7 +52,7 @@ ion-label {
   margin-top: 6px;
   font-size: 24px;
   font-weight: 800;
-  color: #e2e8f0;
+  color: var(--app-text);
   text-align: right;
 }
 
